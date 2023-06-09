@@ -1,7 +1,11 @@
 face
 {
-    height: 8px;
-    width: 8px;
+    height: 3px;
+    width: 3px;
+    float: right;
+}
+score
+{
     float: left;
 }
 
