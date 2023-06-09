@@ -31,6 +31,8 @@ allQs = [
 
 let question = null;
 let score = 0;
+let totalQuestion = 0;
+let max =5;
 getRandomQuestion();
 
 
@@ -47,7 +49,7 @@ function getRandomQuestion()
     document.getElementById("op2").innerText = allOptions[1];
     document.getElementById("op3").innerText = allOptions[2];
     document.getElementById("op4").innerText = allOptions[3];
-
+    totalQuestion++;
 
 }
 
@@ -70,18 +72,34 @@ function checkAnswer(userButton)
         console.log("not equal");
         score --;
         document.getElementById("score").innerText = score;
-        document.getElementById("face").setAttribute("src","assests/SadFace.png");
+        document.getElementById("face").setAttribute("src","assests/sadface.png");
 
     }
     setTimeout('', 10000);
+    if(totalQuestion < max)
+        getRandomQuestion();
+    else
+        gameOver();
 }
 
 
 function getRandomNumber()
 {
-    let max = 5;
+   
     let randomNumber = Math.floor(Math.random() * max);
      console.log(randomNumber);
      return randomNumber;
       
 }
+
+function gameOver()
+{
+    let gameOver = document.getElementById(gameOver);
+    console.log(gameOver);
+
+    //Question in different js
+    //more questions
+    // Display proper big image of score while playing the game 
+    // display messsage to over Game over . you score is 
+}
+
