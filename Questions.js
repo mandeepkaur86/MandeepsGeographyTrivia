@@ -10,3 +10,6 @@ allQs = [
         "Options":"Texas , Nile, Missisippi, Indiana"
     }
 ]
+
+
+export {allQs};

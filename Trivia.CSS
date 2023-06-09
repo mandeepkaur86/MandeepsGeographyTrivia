@@ -1,7 +1,7 @@
 face
 {
-    height: 10px;
-    width: 20px;
+    height: 8px;
+    width: 8px;
     float: left;
 }
 
@@ -10,4 +10,16 @@ face
     width: 100px;
     height: 30px;
     background-color: aqua;
+}
+
+#main
+{
+    background-color: darkolivegreen;
+    min-height: 400px;
+}
+
+#bottom
+{
+    background-color: darkolivegreen;
+    
 }
