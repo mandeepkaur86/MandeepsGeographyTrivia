@@ -6,14 +6,14 @@ face
 }
 score
 {
-    float: left;
+    float: right;
 }
 
 .Options
 {
     width: 100px;
     height: 30px;
-    background-color: aqua;
+    background-color:aqua;
 }
 
 #main
@@ -29,8 +29,18 @@ score
 }
 /* Centered text */
 .centered {
+    width: 30%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+/*img {
+    max-width: 50%;
+    max-height: 50%;
+}*/
+/*#options {
+    display: flex;
+    flex-wrap: wrap;
+  align-content: flex-start;
+  }*/
