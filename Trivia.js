@@ -57,7 +57,7 @@ function checkAnswer(userButton)
     makeButtonNonClickable();
     if(question.Answer === userAnswer)
     {
-        console.log("qual");
+        console.log("equal");
         score ++;
         document.getElementById("score").innerText = "You Score is : "+score;
         document.getElementById("face").setAttribute("src","assests/HappyImage.jpg");
@@ -70,7 +70,7 @@ function checkAnswer(userButton)
         document.getElementById("face").setAttribute("src","assests/sadface.png");
 
     }
-   setTimeout(nextStep, 10000);
+   setTimeout(nextStep, 5000);
    
 }
 
@@ -78,7 +78,7 @@ function nextStep()
 {
     if(totalQuestion < max)
     getRandomQuestion();
-else
+    else
     gameOver();
 }
 

@@ -44,3 +44,6 @@ score
     flex-wrap: wrap;
   align-content: flex-start;
   }*/
+  body {
+    background-image: url('example_img_emoji.jpg');
+  }
