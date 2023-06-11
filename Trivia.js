@@ -2,7 +2,7 @@
 let question = null;
 let score = 0;
 let totalQuestion = 0;
-let max = 3;
+let max = 10;
 
 
 
