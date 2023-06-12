@@ -67,7 +67,8 @@ function checkAnswer(userButton)
     {   
         console.log("not equal");
         score --;
-        document.getElementById("score").innerHTML = "<h2>You Score is : "+score+ "</h2>";
+        
+        document.getElementById("Score").innerText = "<h2>you Score is: "+score+"</h2>";
         document.getElementById("face").setAttribute("src","assests/sad2.gif");
 
     }
