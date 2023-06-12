@@ -1,8 +1,9 @@
 
 let question = null;
 let score = 0;
-let totalQuestion = 0;
-let max = 10;
+let totalQuestions = allQs.length;
+let questionNum =1;
+let quizTotal = 10;
 
 
 
@@ -20,7 +21,7 @@ function getRandomQuestion()
     document.getElementById("face").setAttribute("src","assests/Thinking.gif");
     question = allQs[random];
     console.log(question.Answer);
-    document.getElementById("question").innerText = question.Question;
+    document.getElementById("question").innerText = questionNum +". "+question.Question;
     let options = question.Options;
     let allOptions = options.split(",");
     
@@ -28,7 +29,7 @@ function getRandomQuestion()
     document.getElementById("op2").innerText = allOptions[1];
     document.getElementById("op3").innerText = allOptions[2];
     document.getElementById("op4").innerText = allOptions[3];
-    totalQuestion++;
+    questionNum++;
 
 }
 
@@ -59,15 +60,15 @@ function checkAnswer(userButton)
     {
         console.log("equal");
         score ++;
-        document.getElementById("score").innerText = "You Score is : "+score;
+        document.getElementById("score").innerHTML = "<h2>You Score is : "+score+ "</h2>";
         document.getElementById("face").setAttribute("src","assests/HappyImage.jpg");
     }
     else
     {   
         console.log("not equal");
         score --;
-        document.getElementById("score").innerText = "You Score is : "+score;
-        document.getElementById("face").setAttribute("src","assests/sadface.png");
+        document.getElementById("score").innerHTML = "<h2>You Score is : "+score+ "</h2>";
+        document.getElementById("face").setAttribute("src","assests/sad2.gif");
 
     }
    setTimeout(nextStep, 5000);
@@ -76,7 +77,7 @@ function checkAnswer(userButton)
 
 function nextStep()
 {
-    if(totalQuestion < max)
+    if(questionNum <= quizTotal)
     getRandomQuestion();
     else
     gameOver();
@@ -85,7 +86,7 @@ function nextStep()
 function getRandomNumber()
 {
    
-    let randomNumber = Math.floor(Math.random() * max);  
+    let randomNumber = Math.floor(Math.random() * totalQuestions);  
      console.log(randomNumber);
      return randomNumber;
       
@@ -100,13 +101,13 @@ function gameOver()
     image
     if(score >7)
     {
-        header.innerHTML = "GAME OVER";
-        main.innerHTML = "Good Job. You are stellar";
+        main.innerHTML = "<h1>GAME OVER</h1>";
+        main.innerHTML += "<h2>Good Job. You are stellar</h2><h3> You Score is "+score+"</h3>";
     }
     else
     {
-        header.innerHTML = "GAME OVER";
-        main.innerHTML = "<h1> You Score is "+score+"</h1><h2> Better luck next time </h2>";
+        main.innerHTML = "<h1>GAME OVER</h1>";
+        main.innerHTML += "<h2> Better luck next time </h2><h3> You Score is "+score+"</h3>";
     }
 
     //Question in different js
