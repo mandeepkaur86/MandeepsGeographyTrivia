@@ -9,7 +9,27 @@ score
     float: right;
     width: 100px;
     height: 100px;
+    position: absolute;
+    
+       
 }
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: normal;
+    align-items: normal;
+    align-content: normal;
+  }
+  
+  .flex-items:nth-child(1) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
 
 .Options
 {
@@ -50,37 +70,7 @@ score
   body {
     background-image: url('example_img_emoji.jpg');
   }
- /* put[type="radio"] {
-    display: none;
-  }
-  
-  /* Style the custom radio button */
-  input[type="radio"] + label {
-    display: inline-block;
-    position: relative;
-    padding-left: 25px; /* Adjust as needed */
-    cursor: pointer;
-  }
-  
-  /* Style the radio button indicator */
-  
-  input[type="radio"] + label:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 1px; /* Adjust as needed */
-    width: 16px; /* Adjust as needed */
-    height: 16px; /* Adjust as needed */
-    border-radius: 50%;
-    border: 1px solid #000; /* Adjust color as needed */
-    background-color: #fff; /* Adjust color as needed */
-  }
-  
-  /* Style the radio button indicator when selected */
-  input[type="radio"]:checked + label:before {
-    background-color: #000; /* Adjust color as needed */
-  } 
-
+ 
   
   
   
