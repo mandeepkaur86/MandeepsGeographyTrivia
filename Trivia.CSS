@@ -1,7 +1,7 @@
 face
 {
-    height: 3px;
-    width: 3px;
+    height: 30px;
+    width: 30px;
     float: right;
 }
 score
@@ -72,6 +72,10 @@ score
     background-image: url('example_img_emoji.jpg');
   }
  
+  .bolder{
+    font-weight: 900;
+  }
+
   
   
   

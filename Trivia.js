@@ -21,7 +21,7 @@ function getRandomQuestion()
     document.getElementById("face").setAttribute("src","assests/Thinking.gif");
     question = allQs[random];
     console.log(question.Answer);
-    document.getElementById("question").innerText = questionNum +". "+question.Question;
+    document.getElementById("question").innerText = questionNum +" . "+question.Question;
     let options = question.Options;
     let allOptions = options.split(",");
     
@@ -67,12 +67,11 @@ function checkAnswer(userButton)
     {   
         console.log("not equal");
         score --;
-        
         document.getElementById("Score").innerText = "<h2>you Score is: "+score+"</h2>";
         document.getElementById("face").setAttribute("src","assests/sad2.gif");
 
     }
-   setTimeout(nextStep, 5000);
+   setTimeout(nextStep, 1000);
    
 }
 
