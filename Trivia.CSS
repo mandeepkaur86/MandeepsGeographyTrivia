@@ -63,30 +63,9 @@ score
   body {
     background-image: url('example_img_emoji.jpg');
   }
-  *
- {
-  .margin:0;
-  padding:0;
-  box-sizing: border-box;
- }
- body
- {
-  min-height: 100vh;
-  background: #0c192c;
- }
- .container
- {
-   position: relative;
-   width:100%;
-   height:100vh;
-   overflow:hidden;
- }
- .bubbles
- {
- postion:relative;
- display:flex;
+
  
- }
+ 
 
   
   

@@ -60,14 +60,14 @@ function checkAnswer(userButton)
     {
         console.log("equal");
         score ++;
-        document.getElementById("score").innerHTML = "<h2>You Score is : "+score+ "</h2>";
+        document.getElementById("score").innerHTML = "<h2> You Score is : "+score+ "</h2>";
         document.getElementById("face").setAttribute("src","assests/HappyImage.jpg");
     }
     else
     {   
         console.log("not equal");
         score --;
-        document.getElementById("Score").innerText = "<h2>you Score is: "+score+"</h2>";
+        document.getElementById("score").innerHTML = "<h2> You Score is: "+score+ "</h2>";
         document.getElementById("face").setAttribute("src","assests/sad2.gif");
 
     }
@@ -102,12 +102,12 @@ function gameOver()
     if(score >7)
     {
         main.innerHTML = "<h1>GAME OVER</h1>";
-        main.innerHTML += "<h2>Good Job. You are stellar</h2><h3> You Score is "+score+"</h3>";
+        main.innerHTML += "<h2>Good Job. You are stellar</h2> <h3> You Score is " + score + "</h3>";
     }
     else
     {
         main.innerHTML = "<h1>GAME OVER</h1>";
-        main.innerHTML += "<h2> Better luck next time </h2><h3> You Score is "+score+"</h3>";
+        main.innerHTML += "<h2> Better luck next time </h2> <h3> You Score is " + score + "</h3>";
     }
 
     //Question in different js
