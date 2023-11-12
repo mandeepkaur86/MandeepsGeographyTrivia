@@ -1,7 +1,10 @@
-/*face
+@use "colorConfig" as colors;
+@use "EmojiConfig" as emoji;
+
+face
 {
-    height: 3px;
-    width: 3px;
+    height: emoji.$EmojiHeight;
+    width: emoji.$EmojiWidth;
     float: right;
 }
 score
@@ -35,23 +38,23 @@ score
 {
     width: 200px;
     height: 50px;
-    background-color:aqua;
+    background-color: colors.$optionColor;
     display:inline-block;
 }
 
 #main
 {
-    background-color: darkolivegreen;
+    background-color: colors.$backgroundColor;
     min-height: 1700px;
     padding: 60px;
 }
 
 #bottom
 {
-    background-color: darkolivegreen;
+    background-color: colors.$backgroundColor;
     
 }
-// Centered text 
+/* Centered text */
 .centered {
   width: 20%;
   position: absolute;
@@ -59,7 +62,15 @@ score
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
+/*img {
+    max-width: 50%;
+    max-height: 50%;
+}*/
+/*#options {
+    display: flex;
+    flex-wrap: wrap;
+  align-content: flex-start;
+  }*/
   body {
     background-image: url('example_img_emoji.jpg');
   }
@@ -69,5 +80,5 @@ score
   
   
   
-  */
+  
   

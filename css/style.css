@@ -1,0 +1,71 @@
+face {
+  height: 3px;
+  width: 3px;
+  float: right;
+}
+
+score {
+  float: right;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: normal;
+  align-items: normal;
+  align-content: normal;
+}
+
+.flex-items:nth-child(1) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.Options {
+  width: 200px;
+  height: 50px;
+  background-color: aqua;
+  display: inline-block;
+}
+
+#main {
+  background-color: darkolivegreen;
+  min-height: 1700px;
+  padding: 60px;
+}
+
+#bottom {
+  background-color: darkolivegreen;
+}
+
+/* Centered text */
+.centered {
+  width: 20%;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*img {
+    max-width: 50%;
+    max-height: 50%;
+}*/
+/*#options {
+    display: flex;
+    flex-wrap: wrap;
+  align-content: flex-start;
+  }*/
+body {
+  background-image: url("example_img_emoji.jpg");
+}
+
+/*# sourceMappingURL=style.css.map */
